@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Space Weather</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- CLOUDS -->
+    <div class="cloud cloud1"></div>
+    <div class="cloud cloud2"></div>
+
+    <div class="rain"></div>
+    <div class="sun"></div>
+<div class="moon"></div>
+
+    <!-- HEADER -->
+
+    <header class="header wrapper">
+
+        <div class="header__content">
+            <svg class="logo" width="140" height="50" viewBox="0 0 140 50" xmlns="http://www.w3.org/2000/svg">
+  
+  <circle cx="20" cy="25" r="10" fill="#7d4dff"/>
+
+  <path d="M40 35c0-6 5-10 11-10 3 0 6 1 8 3 2-3 6-5 10-5 6 0 11 5 11 11 5 1 8 5 8 10 0 6-5 11-11 11H52c-7 0-12-5-12-10z"
+        fill="rgba(255,255,255,0.7)"/>
+
+  <text x="40" y="28" fill="white" font-size="14" font-family="Arial" font-weight="bold">
+    Sky App
+  </text>
+
+</svg>
+
+
+
+            <select class="header__dropdown">
+
+                <option>Units</option>
+
+                <option>Celsius</option>
+
+                <option>Fahrenheit</option>
+
+            </select>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- HERO -->
+
+    <main class="main wrapper">
+
+        <section class="hero">
+
+            <h1 class="hero__title">
+
+                Explore the sky in real time
+
+            </h1>
+
+
+            <form class="hero__search">
+
+                <input
+                    type="text"
+                    placeholder="Search for a city..."
+                    class="hero__textbox"
+                >
+
+                <button class="hero__button">
+
+                    Search
+
+                </button>
+
+            </form>
+
+        </section>
+
+
+
+        <!-- DASHBOARD -->
+
+        <section class="dashboard">
+
+
+            <!-- BIG CARD -->
+
+            <div class="current__weather">
+
+                <div class="current__location">
+
+                    <h2 class="current__city">
+
+                        Amman, Jordan
+
+                    </h2>
+
+                    <p class="current__date">
+
+                        Tuesday, May 20
+
+                    </p>
+                    <p class="live-time"></p>
+
+                </div>
+
+
+                <div class="current__info">
+
+                    <img
+                        src="images/icon-sunny.webp"
+                        alt="sun"
+                        class="current__icon"
+                    >
+
+                    <p class="current__temp">
+
+                        32°
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- SMALL CARDS -->
+
+            <div class="current__conditions">
+                <div class="current__condition block">
+
+<p class="current__condition-title">
+
+Air Quality
+
+</p>
+
+<p class="current__condition-value">
+
+Excellent
+
+</p>
+
+</div>
+
+                <div class="current__condition block">
+
+                    <p class="current__condition-title">
+
+                        Feels Like
+
+                    </p>
+
+                    <p class="current__condition-value">
+
+                        30°
+
+                    </p>
+
+                </div>
+
+
+
+                <div class="current__condition block">
+
+                    <p class="current__condition-title">
+
+                        Humidity
+
+                    </p>
+
+                    <p class="current__condition-value">
+
+                        46%
+
+                    </p>
+
+                </div>
+
+
+
+                <div class="current__condition block">
+
+                    <p class="current__condition-title">
+
+                        Wind
+
+                    </p>
+
+                    <p class="current__condition-value">
+
+                        9 km/h
+
+                    </p>
+
+                </div>
+
+
+
+                <div class="current__condition block">
+
+                    <p class="current__condition-title">
+
+                        Rain
+
+                    </p>
+
+                    <p class="current__condition-value">
+
+                        0%
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- FORECAST -->
+
+            <div class="forecast__header">
+                <div class="forecast__header">
+
+                    <h3>
+
+                        Hourly Forecast
+
+                    </h3>
+
+                </div>
+
+
+
+                <div class="forecast__item">
+
+                    <div class="forecast__time">
+
+                        <img src="images/icon-overcast.webp">
+
+                        <span>3 PM</span>
+
+                    </div>
+
+                    <p>28°</p>
+
+                </div>
+
+
+
+                <div class="forecast__item">
+
+                    <div class="forecast__time">
+
+                        <img src="images/icon-partly-cloudy.webp">
+
+                        <span>4 PM</span>
+
+                    </div>
+
+                    <p>27°</p>
+
+                </div>
+
+
+
+                <div class="forecast__item">
+
+                    <div class="forecast__time">
+
+                        <img src="images/icon-sunny.webp">
+
+                        <span>5 PM</span>
+
+                    </div>
+
+                    <p>26°</p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+<script src="script.js"></script>
+</body>
+</html>
